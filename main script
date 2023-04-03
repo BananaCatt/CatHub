@@ -1,0 +1,97 @@
+if game.PlaceId == 142823291, 3198259055, 6516141723 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "CatHub [Free Version!]", HidePremium = false, IntroText = CatHub, SaveConfig = true, ConfigFolder = "OrionTest"})
+ 
+local Tab = Window:MakeTab({
+	Name = "Doors",
+	Icon = "rbxassetid://10906441225",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "loadstring scripts"
+})
+
+Tab:AddButton({
+	Name = "plamen6789rock's utilities hub",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "MSDOORS",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkHvH/Femboy.thighs/main/Hide-and-seek", true))()
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hub Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/doors"))()
+
+--  use this if you have no girls :)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "???",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Oh No!",
+            Content = "This feature is not done yet!",
+            Image = "rbxassetid://3868601",
+            Time = 5
+        })
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Toggles"
+})
+
+Tab:AddToggle({
+	Name = "Become dream (increases speed to 160)",
+	Default = false,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 160
+	end    
+})
+
+        local Tab = Window:MakeTab({
+            Name = "Murder Mystery 2",
+            Icon = "rbxassetid://7137398862",
+            PremiumOnly = false
+        })
+
+		Tab:AddButton({
+			Name = "MM2 script hub",
+			Callback = function()
+				loadstring(game:HttpGet('https://scripts.luawl.com/Main/Scourge.lua'))()
+
+			  end    
+		})
+
+		local Section = Tab:AddSection({
+			Name = "Is there anything else?"
+		})
+
+		Tab:AddButton({
+			Name = "Answer",
+			Callback = function()
+				OrionLib:MakeNotification({
+					Name = "Not yet!",
+					Content = "We are still working on this GUI, its in it's early stages!",
+					Image = "rbxassetid://4483345998",
+					Time = 5
+				})
+			  end    
+		})
+
+		local Tab = Window:MakeTab({
+			Name = "Soulshatters",
+			Icon = "rbxassetid://682975212",
+			PremiumOnly = false
+		})
